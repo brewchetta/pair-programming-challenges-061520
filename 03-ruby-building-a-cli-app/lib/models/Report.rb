@@ -18,4 +18,10 @@ class Report
     @@all
   end
 
+  def pretty_print
+    puts "\n-----"
+    puts [@product, @manufacturer, @category, @date_released, @rating]
+    puts "-----\n"
+  end
+
 end

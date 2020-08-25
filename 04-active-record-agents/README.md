@@ -49,3 +49,5 @@ Now it's time to create a few custom methods for our agents and organizations.
 - You don't need to generate the migration files, just the migration content inside the files
 
 - When building methods in the agent and organization models, try and utilize the relationship methods given by ActiveRecord
+
+- You can utilize the seeds file to quickly recreate a new group of agents and organizations to test usinge `rake db:seed` in the terminal

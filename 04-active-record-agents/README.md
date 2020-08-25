@@ -1,5 +1,7 @@
 # Agents of Active Record
 
+Based on all the super secret activity that's been going on, we need to create a database of secret agents and organizations to keep track of them.
+
 ## Deliverables
 
 Create a migration that builds an agents table. This table should have the following columns:
@@ -51,3 +53,5 @@ Now it's time to create a few custom methods for our agents and organizations.
 - When building methods in the agent and organization models, try and utilize the relationship methods given by ActiveRecord
 
 - You can utilize the seeds file to quickly recreate a new group of agents and organizations to test usinge `rake db:seed` in the terminal
+
+- To test your methods, you can call `rake console` in the terminal

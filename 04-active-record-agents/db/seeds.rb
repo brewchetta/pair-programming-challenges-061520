@@ -7,9 +7,9 @@ o1 = Organization.create(name: "Culper Ring", year_formed: 1776)
 o2 = Organization.create(name: "MI6", year_formed: 1915)
 o3 = Organization.create(name: "Redacted", year_formed: 2020)
 
-10.times do |i|
+9.times do |i|
   agent_hash = {
-    name: "Agent #{i}",
+    name: "Agent 00#{i}",
     year_trained: rand(1970..2020),
     active_status: rand(1..2) > 1,
     specialty: ["demoltion", "survival", "extraction", "wetwork", "finances"].sample,

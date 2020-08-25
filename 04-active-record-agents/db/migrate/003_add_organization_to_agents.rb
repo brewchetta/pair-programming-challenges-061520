@@ -1,5 +1,5 @@
-class AddActiveStatusToAgents < ActiveRecord::Migration[5.1]
+class AddOrganizationToAgents < ActiveRecord::Migration[5.2]
   def change
-    # we forgot something! let's add an important column to our agents so they know which organization they belong to
+    add_column :agents, :organization_id, :integer
   end
 end

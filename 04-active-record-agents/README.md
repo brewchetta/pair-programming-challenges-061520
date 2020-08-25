@@ -4,7 +4,7 @@
 
 Create a migration that builds an agents table. This table should have the following columns:
 - `name` => the agent's code name
-- `date_joined` => the date an agent joined the organization (utilize the ActiveRecord datetime attribute)
+- `year_trained` => an integer that represents the year an agent finished their training
 - `active_status` => essentially a boolean determining whether the agent is currently active or not
 - `specialty` => the agent's specialty
 

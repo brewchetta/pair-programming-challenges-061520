@@ -1,5 +1,10 @@
-class CreateOrganizations < ActiveRecord::Migration[5.1]
+class CreateOrganizations < ActiveRecord::Migration[5.2]
   def change
-    # we need to create an organizations table here with the necessary attributes
+    create_table :organizations do |t|
+      t.string :name
+      t.integer :year_formed
+
+      t.timestamps
+    end
   end
 end

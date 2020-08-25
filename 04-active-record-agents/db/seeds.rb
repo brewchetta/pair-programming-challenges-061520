@@ -13,7 +13,7 @@ o3 = Organization.create(name: "Redacted", year_formed: 2020)
     year_trained: rand(1970..2020),
     active_status: rand(1..2) > 1,
     specialty: ["demoltion", "survival", "extraction", "wetwork", "finances"].sample,
-    organization_id: Organization.all.sample
+    organization_id: Organization.all.sample.id
   }
   Agent.create!(agent_hash)
 end

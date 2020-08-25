@@ -1,17 +1,9 @@
 require 'bundler/setup'
 Bundler.require
 
-require 'rake'
-require 'active_record'
-require 'yaml/store'
-require 'ostruct'
-require 'date'
-require 'require_all'
+ActiveRecord::Base.establish_connection(
+  :adapter => "sqlite3",
+  :database => "db/#{ENV['SINATRA_ENV']}.sqlite"
+)
 
-DBNAME = "agents"
-
-require_all "app"
-require_all "lib"
-
-DBRegistry[ENV["ACTIVE_RECORD_ENV"]].connect!
-DB = ActiveRecord::Base.connection
+require_all 'app'

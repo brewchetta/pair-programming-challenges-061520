@@ -2,3 +2,5 @@ Gemfile.lock
 db/agents-development.db
 db/agents-test.db
 db/agents-production.db
+db/*.sqlite3
+schema.rb

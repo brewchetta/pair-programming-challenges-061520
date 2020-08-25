@@ -1,6 +1,9 @@
 # Gems
 require "pry"
+require "net/http"
+require "uri"
 require "json"
+# here we just made sure to include `net/http` and 
 
 # Models
 require_relative "../lib/models/Report.rb"

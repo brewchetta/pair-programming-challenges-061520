@@ -1,6 +1,6 @@
 # Flitter
 
-We're building the backend for a Twitter clone named Flitter!
+We're building the backend for a Twitter clone named Flitter! Once this repo has been cloned down, make sure to `bundle install`.
 
 ## User
 

@@ -6,7 +6,6 @@ constellations = [
   {name: "Ursa Major"},
   {name: "Perseus"},
   {name: "Cassiopeia"},
-  {name: "Boötes"},
   {name: "Aries"},
   {name: "Aquila"}
 ]

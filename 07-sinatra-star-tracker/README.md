@@ -1,24 +1,31 @@
-# CRUD in Sinatra
+# Star Tracker
 
-Today we're going to be building CRUD in Sinatra. The models have already been built, we just need to spend some time on their controllers and views.
+We need to build out a star tracker that keeps track of stars and their associated constellations.
 
-To get started, clone this down and run `bundle install` along with `rake db:migrate` and `rake db:seed`.
+## What You Have
 
-## Create
+Currently you have a `Constellation` model and an index that shows all the constellations and their associated stars. What we're missing however is the `Star` model and it's migrations. Additionally, you have an empty `stars_controller.rb` as well as a folder to put the stars views.
 
-- New: `get /stars/new` Create action that presents an HTML form to create an item in the database
-- Create: `post /stars` Create action that adds the completed item to the database
+## Getting Started
 
-# Read
+Make sure to bundle install and then create a migration and model for stars. Stars belong to constellations so be sure to add in the appropriate macros and fields.
 
-- Index: `get /stars` Read action for all items in the database
-- Show: `get /stars/1` Read action for one item in the database
+Once you've migrated, you should be able to start the server with `shotgun`. You also have access to `rake console` as well as `rake db:seed`. At this point it's probably best to test your associations to make sure they work.
 
-## Update
+## Creating/Editing Stars
 
-- Edit: `get /stars/1/edit` Update action that presents an HTML form to edit an item in the database
-- Update: `patch /stars/1` Update action that updates the edited item in the database
+The most important part of this challenge is creating and editing stars. You need to be able to:
 
-## Delete/Destroy
+1. Create a form for building stars. The form should have a field to write in a star's constellation.
 
-- Destroy: `delete /stars/1` Delete action that removes the item from the database
+2. When you create a star, the star should be associated with the constellation that was typed in. If the constellation doesn't exist, it needs to be created.
+
+3. You should be able to edit stars in the same manner as they're created.
+
+4. Stars must have a constellation, name, and number of light years. Stars cannot be created without these.
+
+## Hints
+
+You can perform quite a bit of your work in the create route for stars. Just because it exists in the stars controller doesn't mean you can't do work with the constellations as well!
+
+The easiest way to avoid stars without names, light year metrics, or constellations, is to utilize validations.

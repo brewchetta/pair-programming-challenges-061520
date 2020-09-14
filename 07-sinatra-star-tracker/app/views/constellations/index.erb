@@ -1,1 +1,17 @@
 <h1>All Constellations</h1>
+
+<% @constellations.each do |constellation| %>
+
+  <h3><%= constellation.name %></h3>
+
+  <ul>
+    <% constellation.stars.each do |star| %>
+
+    <li><% star.name %> | <%= star.light_years %> Lightyears Away</li>
+
+    <% end %>
+  </ul>
+
+  <p>Number of stars: <% constellation.stars.length %></p>
+
+<% end %>

@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # this first route will load up the welcome page
+  get '/', to: 'application#welcome'
+
+  # add your routes here!
 end

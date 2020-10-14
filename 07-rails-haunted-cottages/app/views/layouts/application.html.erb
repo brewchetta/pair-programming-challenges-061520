@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsHauntedCottages</title>
+    <title>Rails Haunted Cottages</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
 
   <body>
+
+    <nav>
+
+      <div class="navbar-mask">
+        <a href="/">Home</a>
+        <a href="/cottages">All Cottages</a>
+        <a href="/cottages/highest-ranked">Highest Ranked Cottage</a>
+        <a href="/cottages/most-disappearances">Most Haunted Cottage</a>
+      </div>
+
+    </nav>
+
     <%= yield %>
+
+    <footer>Disclaimer: This website is not responsible for any incidents of dismemberment, ghostly possession, lycanthropy, lost children, psychic trauma, poisoning, drowning, electrocution, bird attacks, stabbings, or any other form of harm. <br> By using this website you agree to take on all possible risks ever and waive your right to sue us for damages :D</footer>
   </body>
 </html>

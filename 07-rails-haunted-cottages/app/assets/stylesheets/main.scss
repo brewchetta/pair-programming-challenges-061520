@@ -1,0 +1,74 @@
+body {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+// Animations
+
+@keyframes drain-color {
+  from {filter: grayscale(0)}
+  to {filter: grayscale(1)}
+}
+
+// Text Tags
+
+h1, h2, h3, h4 {
+  font-family: 'Aladin', cursive;
+}
+
+p {
+  font-family: monospace;
+}
+
+// Navbar
+
+nav {
+  background-image: url("https://lithub.com/wp-content/uploads/sites/3/2019/10/haunted-house-feat-1.jpg");
+  left: 0;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100vw;
+  border-bottom: solid black 2px;
+
+  div {
+    background-color: #F3D08DAA;
+
+    a {
+      color: black;
+      padding: 0 3%;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #555;
+    }
+  }
+
+}
+
+// Footer
+
+footer {
+  background-color: grey;
+  bottom: 0;
+  color: white;
+  font-size: 0.6em;
+  left: 0;
+  padding: 1em;
+  position: fixed;
+  width: 100vw;
+}
+
+// Images
+
+img {
+  animation: drain-color 6s forwards;
+  animation-delay: 2s;
+  border-radius: 5px;
+  border: solid black 2px;
+}
+
+.thumbnail {
+  height: 100px;
+}

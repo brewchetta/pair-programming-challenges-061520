@@ -44,7 +44,7 @@ cottage_data = [
 ]
 
 cottage_data.each do |c|
-  puts "Listing #{c.name}"
+  puts "Listing #{c[:name]}"
   Cottage.create!(c)
 end
 

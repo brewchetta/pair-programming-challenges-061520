@@ -2,7 +2,7 @@
 
 A wealthy patron has asked you to build a website after their first web developer disappeared under mysterious circumstances. Their website, Haunted Cottage Seeker, already has a front page and information on their cottage rentals. All they need now is for you to finish it.
 
-To get started, run `bundle install`.
+To get started, clone down the repository and run `bundle install`.
 
 ### Models
 
